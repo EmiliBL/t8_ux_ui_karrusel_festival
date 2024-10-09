@@ -84,25 +84,32 @@
 /******************** DESKTOP ********************/
 
 /******************** Typografi ********************/
-.h1 {
+h1 {
   font-family: "glodok", sans-serif;
   font-size: 70px;
 }
 
-.h2 {
+h2 {
   font-family: "glodok", sans-serif;
   font-size: 43px;
 }
 
-.h3 {
+h3 {
   font-family: "glodok", sans-serif;
   font-size: 26px;
 }
 
-.h1,
-.h2,
-.h3 {
+h1,
+h2,
+h3 {
   color: var(--secondary-color);
+}
+
+p {
+  font-family: "Prompt", sans-serif;
+  font-size: 16px;
+  color: var(--secondary-color);
+  line-height: 27%;
 }
 
 .p_default {
@@ -128,7 +135,7 @@
 
 /******************** margin ********************/
 
-.body {
+body {
   margin-left: 24px;
   margin-right: 24px;
 }
