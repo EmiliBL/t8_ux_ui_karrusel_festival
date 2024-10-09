@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/******************** Mobile ********************/
+@media (min-width: 400px) {
+  /******************** Typografi ********************/
+  .h1 {
+    font-size: 43px;
+  }
+
+  .h2 {
+    font-size: 20px;
+  }
+
+  .h3 {
+    font-size: 23px;
+  }
+
+  .p_small {
+    font-size: 16px;
+    line-height: 27%;
+  }
+
+  /******************** margin ********************/
+  .body {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  /******************** glass morphism ********************/
+  .glas_boks {
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.19);
+    backdrop-filter: blur(7.5px);
+  }
+
+  /******************** images ********************/
+  .img {
+    border-radius: 20px;
+  }
+
+  /******************** CTA BOOK ********************/
+  .book_cta {
+    display: flex;
+    width: 118px;
+    height: 43px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 122px;
+    background: linear-gradient(94deg, #8cff66 0%, #6ec850 98.74%);
+  }
+
+  /******************** top navigation book now knap ********************/
+  .topnav_book_cta {
+    display: flex;
+    width: 62.831px;
+    height: 22px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 1000px;
+    border: 1px solid #fff;
+  }
+
+  /******************** CTA APPLY ********************/
+  .apply_cta {
+    display: flex;
+    width: 118px;
+    height: 43px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 1000px;
+    border: 1px solid #fff;
+  }
+}
+
+/******************** DESKTOP ********************/
+
+/******************** Typografi ********************/
+.h1 {
+  font-family: "glodok", sans-serif;
+  font-size: 70px;
+}
+
+.h2 {
+  font-family: "glodok", sans-serif;
+  font-size: 43px;
+}
+
+.h3 {
+  font-family: "glodok", sans-serif;
+  font-size: 26px;
+}
+
+.h1,
+.h2,
+.h3 {
+  color: var(--secondary-color);
+}
+
+.p_default {
+  font-family: "Prompt", sans-serif;
+  font-size: 20px;
+  color: var(--secondary-color);
+  line-height: 27%;
+}
+
+.p_small {
+  font-family: "Prompt", sans-serif;
+  font-size: 16px;
+  color: var(--secondary-color);
+}
+
+/******************** Colors ********************/
+
+:root {
+  --primary-color: #73ff45; /* CTA */
+  --secondary-color: #f9f9f9; /* Text h1, h2, h3 , p */
+  --cta_text: #492156; /* cta text */
+}
+
+/******************** margin ********************/
+
+.body {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+/******************** glassmorphism ********************/
+.glas_boks {
+  border-radius: 35px;
+  background: rgba(255, 255, 255, 0.19);
+  backdrop-filter: blur(7.5px);
+}
+
+/******************** Images ********************/
+.img {
+  border-radius: 34px;
+}
+
+/******************** CTA BOOK ********************/
+.book_cta {
+  border-radius: 122px;
+  background: linear-gradient(94deg, #8cff66 0%, #6ec850 98.74%);
+  display: flex;
+  width: 140px;
+  height: 45px;
+  padding: 13.295px 0px 10.449px 0px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/******************** top navigation book now knap ********************/
+.topnav_book_cta {
+  display: flex;
+  width: 118px;
+  height: 40px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 1000px;
+  border: 1px solid #fff;
+}
+
+/******************** CTA APPLY ********************/
+.apply_cta {
+  display: flex;
+  width: 130px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 1000px;
+  border: 1px solid #fff;
+}
