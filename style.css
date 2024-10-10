@@ -1,12 +1,20 @@
 * {
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+img {
+  width: 100%;
+}
+
 /******************** Mobile ********************/
-@media (min-width: 400px) {
+@media (max-width: 400px) {
+
   /******************** Typografi ********************/
-  .h1 {
+  h1 {
+    font-family: "glodok", sans-serif;
     font-size: 43px;
   }
 
@@ -20,11 +28,11 @@
 
   .p_small {
     font-size: 16px;
-    line-height: 27%;
+    line-height: 145%;
   }
 
   /******************** margin ********************/
-  .body {
+  main {
     margin-left: 16px;
     margin-right: 16px;
   }
@@ -79,15 +87,106 @@
     border-radius: 1000px;
     border: 1px solid #fff;
   }
+
+  /******************** FOOTER-MOBIL  ********************/
+  .desktop_footer {
+    display: none;
+  }
+
+  .mobil_footer {
+    background-image: url(website_fotos/Mobil.svg);
+    background-size: contain;
+    width: 399px;
+    height: 438px;
+    padding-top: 140px;
+  }
+
+  footer img {
+    width: 130px;
+    /*KAN ÆNDRES SYNES STØRRELSE VAR GOD*/
+  }
+
+  .spondiv {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+
+  }
+
+  .p_footer {
+    font-family: "Prompt", sans-serif;
+    font-size: 10px;
+    color: var(--secondary-color);
+  }
+
+  .buttfot {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 28px;
+  }
+
+  .social svg {
+    margin-bottom: 10px;
+  }
+
+
+
+
+  /******************** GALLERY  ********************/
+
+  .galh1 {
+    padding-bottom: 24px;
+    padding-top: 30px;
+  }
+
+  .card-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding-bottom: 30px;
+  }
+
+  .card-gallery h2 {
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    text-align: center;
+  }
+
+  .card-gallery img {
+    grid-column: 1;
+    grid-row: 1;
+    border-radius: 20px;
+    width: 358px;
+    height: 326.238px;
+  }
+
+
+
 }
 
 /******************** DESKTOP ********************/
 
 /******************** Typografi ********************/
-h1 {
+/******************** Går ind og forstyrre h1 i mobil ********************/
+/* h1 {
   font-family: "glodok", sans-serif;
   font-size: 70px;
-}
+} */
+/******************** Går ind og forstyrre h1 i mobil ********************/
 
 h2 {
   font-family: "glodok", sans-serif;
@@ -109,14 +208,14 @@ p {
   font-family: "Prompt", sans-serif;
   font-size: 16px;
   color: var(--secondary-color);
-  line-height: 27%;
+  line-height: 178%;
 }
 
 .p_default {
   font-family: "Prompt", sans-serif;
   font-size: 20px;
   color: var(--secondary-color);
-  line-height: 27%;
+  line-height: 127%;
 }
 
 .p_small {
@@ -125,19 +224,31 @@ p {
   color: var(--secondary-color);
 }
 
+
+
 /******************** Colors ********************/
 
 :root {
-  --primary-color: #73ff45; /* CTA */
-  --secondary-color: #f9f9f9; /* Text h1, h2, h3 , p */
-  --cta_text: #492156; /* cta text */
+  --primary-color: #73ff45;
+  /* CTA */
+  --secondary-color: #f9f9f9;
+  /* Text h1, h2, h3 , p */
+  --cta_text: #492156;
+  /* cta text */
 }
 
 /******************** margin ********************/
 
-body {
+main {
   margin-left: 24px;
   margin-right: 24px;
+
+}
+
+/******************** Background picture ********************/
+body {
+  background-image: url(website_fotos/Background.v1.webp);
+  background-size: cover;
 }
 
 /******************** glassmorphism ********************/
@@ -189,4 +300,106 @@ body {
   gap: 10px;
   border-radius: 1000px;
   border: 1px solid #fff;
+}
+
+
+
+@media (min-width: 400px) {
+  /******************** GALLERY  ********************/
+
+  .galh1 {
+    padding-bottom: 24px;
+    padding-top: 30px;
+    font-family: "glodok", sans-serif;
+    font-size: 43px;
+
+  }
+
+  h2 {
+    font-family: "glodok", sans-serif;
+    font-size: 128px;
+  }
+
+  .card-gallery img {
+    border-radius: 35px;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  .card-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding-bottom: 171px;
+
+  }
+
+  .card-gallery h2 {
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    text-align: center;
+  }
+
+  .card-gallery img {
+    grid-column: 1;
+    grid-row: 1;
+    flex-shrink: 0;
+  }
+
+  .gallery {
+    margin-left: 148px;
+    margin-right: 148px;
+  }
+
+
+  .mobil_footer {
+    display: none;
+  }
+
+  .desktop_footer {
+    background-image: url(website_fotos/desktop-footer.svg);
+    background-size: cover;
+    width: auto;
+    padding-top: 30%;
+  }
+
+  footer img {
+    width: 130px;
+    /*KAN ÆNDRES SYNES STØRRELSE VAR GOD*/
+  }
+
+  .social {
+    padding-top: 50px;
+    align-items: center;
+  }
+
+  .social svg {
+    margin-right: 10px;
+  }
+
+  .facebook {
+    margin-bottom: 5px;
+  }
+
+  .buttfot {
+    padding-bottom: 50px;
+  }
+
+  .grid_1-1 {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 124px;
+    padding-right: 124px;
+  }
+
+  .spondiv {
+    display: flex;
+    flex-direction: column;
+
+  }
+
 }
