@@ -364,7 +364,7 @@ body {
     background-image: url(website_fotos/desktop-footer.svg);
     background-size: cover;
     width: auto;
-    padding-top: 400px;
+    padding-top: 30%;
   }
 
   footer img {
